@@ -1,0 +1,38 @@
+@menu-prefix-cls: ant-menu;
+
+// dark theme
+.@{menu-prefix-cls} {
+  &-dark,
+  &-dark &-sub {
+    color: #999;
+    background: #475b8a;
+  }
+
+  &-dark &-inline&-sub {
+    background: #333;
+  }
+
+  &-dark&-horizontal {
+    border-bottom-color: #475b8a;
+  }
+
+  &-dark&-horizontal > &-item,
+  &-dark&-horizontal > &-submenu {
+    border-color: #475b8a;
+    border-bottom: 0;
+    top: 0;
+  }
+
+  &-dark &-item,
+  &-dark &-item > a {
+    color: #9fafd7;
+  }
+  &-dark &-item-selected {
+    border-right: 0;
+    color: #fff;
+    > a,
+    > a:hover {
+      color: #fff;
+    }
+  }
+}
